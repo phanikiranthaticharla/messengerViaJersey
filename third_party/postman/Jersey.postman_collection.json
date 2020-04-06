@@ -94,6 +94,17 @@
 				"description": "Send a PUT request to update an existing resource"
 			},
 			"response": []
+		},
+		{
+			"name": "Delete Message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
