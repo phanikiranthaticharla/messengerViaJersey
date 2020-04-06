@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "1b6476d7-b9de-41c5-b4b0-d8dbfe93dbb0",
+		"name": "Jersey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetMessages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Get a list of messages"
+			},
+			"response": []
+		},
+		{
+			"name": "GetMessage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/messenger/webapi/messages/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"author\": \"Phani\",\n        \"created\": \"2020-04-06T06:29:42.315Z[UTC]\",\n        \"message\": \"Hey there, this is the first message\"\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/messenger/webapi/messages",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages"
+					]
+				},
+				"description": "Request to Test Post"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"author\": \"Phani\",\n    \"message\": \"Hey there, I am sending an updated message using PUT\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/messenger/webapi/messages/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messenger",
+						"webapi",
+						"messages",
+						"3"
+					]
+				},
+				"description": "Send a PUT request to update an existing resource"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
