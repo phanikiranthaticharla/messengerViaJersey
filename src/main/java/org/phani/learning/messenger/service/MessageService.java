@@ -46,6 +46,7 @@ public class MessageService {
 		if (message.getId() <= 0) {
 			return null; 
 		}
+		message.setCreated(new Date());
 		messages.put(message.getId(), message);
 		return message; 
 	}

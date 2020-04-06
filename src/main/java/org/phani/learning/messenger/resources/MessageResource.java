@@ -45,6 +45,6 @@ public class MessageResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public Message addMessage(@PathParam("messageId") long id, Message message) {
 		message.setId(id);
-		return messageService.addMessage(message);
+		return messageService.updateMessage(message);
 	}
 }
